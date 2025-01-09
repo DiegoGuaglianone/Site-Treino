@@ -1,0 +1,1 @@
+Esse é um projeto cujo qual acho importante ter no meu repositório, uma landing page completa, onde posso colocar tudo que estou aprendendo na faculdade, além de consolidar meus conhecimentos na área!
