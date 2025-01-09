@@ -1,0 +1,42 @@
+#btn-adotar{
+    display: inline-block;// necessario para usar a propriedade transform
+    padding: 10px 20px;
+    margin-top: -15px; //para nao sair do alinhamento flex e continuar podendo ser alterado pelo scale
+    background-color: $secondary-color;
+    color: white;
+    border-radius: 3px;
+    transition: all 0.5 ease;
+    text-decoration: none;
+
+    &::after{
+        content: url(/assets/images/patinha-branca.png);
+        padding: 5px;
+    }
+
+    &:hover{
+        color: white;
+        transform: scale(1.1);
+    }
+
+}
+
+.btn-adotar{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: $secondary-color;
+    color: white;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+    text-decoration: none;
+
+    &::after{
+        content: url(/assets/images/patinha-branca.png);
+        padding: 5px;
+    }
+
+    &:hover{
+        color: white;
+        transform: scale(1.1);
+    }
+
+}

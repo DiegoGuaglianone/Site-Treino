@@ -1,0 +1,16 @@
+//Fontes baixadas normal
+@font-face{
+    font-family: myFont;
+    src:url(/assets/fonts/themefont.ttf);
+    font-weight: normal;
+}
+//Fonte em negrito
+@font-face{
+    font-family: myFontBold;
+    src:url(/assets/fonts/SF\ New\ Republic\ Bold.ttf);
+    font-weight: bold;
+}
+
+body{
+    font-family: myFont;
+}

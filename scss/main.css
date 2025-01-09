@@ -1,0 +1,178 @@
+@font-face {
+  font-family: myFont;
+  src: url(/assets/fonts/themefont.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: myFontBold;
+  src: url(/assets/fonts/SF\ New\ Republic\ Bold.ttf);
+  font-weight: bold;
+}
+body {
+  font-family: myFont;
+}
+
+#span1 {
+  color: #FF8B87;
+}
+
+#span2 {
+  color: #1268AE;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 25px;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin-top: -15px;
+}
+
+li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.5s ease;
+}
+li a:hover {
+  color: #FF8D8A;
+}
+
+#logo {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#logotexto {
+  display: flex;
+  gap: 10px;
+}
+
+#spanSobre {
+  display: inline-block;
+  margin-top: -15px;
+  font-size: 20px;
+  color: #FF8D8A;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+#spanSobre::before {
+  content: url(/assets/images/patinha-rosa.png);
+  padding: 5px;
+}
+#spanSobre:hover {
+  transform: scale(1.1);
+}
+
+#btn-adotar {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: -15px;
+  background-color: #1268AE;
+  color: white;
+  border-radius: 3px;
+  transition: all 0.5 ease;
+  text-decoration: none;
+}
+#btn-adotar::after {
+  content: url(/assets/images/patinha-branca.png);
+  padding: 5px;
+}
+#btn-adotar:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+.btn-adotar {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1268AE;
+  color: white;
+  border-radius: 3px;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+.btn-adotar::after {
+  content: url(/assets/images/patinha-branca.png);
+  padding: 5px;
+}
+.btn-adotar:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero:before {
+  content: "";
+  position: absolute;
+  top: -80px; /* Ajuste para alinhar no topo */
+  right: 600px;
+  width: 100%;
+  height: 100px; /* Altura da borda inclinada */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
+  z-index: 5;
+  -webkit-clip-path: polygon(50% 100%, 5% 75%, 100% 75%);
+          clip-path: polygon(50% 100%, 5% 75%, 100% 75%);
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+.hero-background #retangulo-frente {
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  z-index: -1;
+}
+.hero-background #retangulo-tras {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: -2;
+  transform: rotate(5deg);
+  transform-origin: center;
+}
+
+.hero-container {
+  font-size: 30px;
+}
+.hero-container h1 {
+  padding: 20px;
+}
+.hero-container .btn-adotar {
+  margin-left: 15px;
+}
+
+#imagem-gato {
+  position: relative;
+  transform: translateX(-210px);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}/*# sourceMappingURL=main.css.map */

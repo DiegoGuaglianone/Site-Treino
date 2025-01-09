@@ -1,0 +1,57 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    list-style:none;
+    padding: 0;
+    margin-top: -15px;
+}
+
+li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: $text-color;
+    transition: all 0.5s ease;
+
+    &:hover{
+        color: $primary-color;
+    }
+}
+
+#logo{
+    object-fit: contain;
+}
+
+p{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#logotexto{
+    display: flex;
+    gap: 10px;
+}
+
+#spanSobre{
+    display: inline-block;
+    margin-top: -15px;
+    font-size: 20px;
+    color: $primary-color;
+    font-weight: bold;
+    transition: all 0.5s;
+
+    &::before{
+        content: url(/assets/images/patinha-rosa.png);
+        padding: 5px;
+    }
+
+    &:hover{
+        transform: scale(1.1);
+    }
+}
